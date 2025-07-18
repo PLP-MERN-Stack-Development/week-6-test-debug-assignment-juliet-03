@@ -1,0 +1,21 @@
+{
+  "name": "mern-bug-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "client": "cd client && npm start",
+  "server": "cd server && npm run dev",
+  "test": "concurrently \"npm run test:client\" \"npm run test:server\"",
+  "test:client": "cd client && npm test",
+  "test:server": "cd server && npm test"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
